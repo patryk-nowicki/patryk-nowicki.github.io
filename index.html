@@ -11,11 +11,18 @@
             padding: 0;
             background-color: #f2f2f2;
         }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
         header img {
             border-radius: 50%;
@@ -29,19 +36,9 @@
         }
         section {
             padding: 20px;
-        }
-        .about-me {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .skills, .portfolio, .contact {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
             margin-bottom: 20px;
         }
         .project {
@@ -59,43 +56,42 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="path/to/your/photo.jpg" alt="Your Name">
-        <h1>[Your Name]'s Portfolio</h1>
-    </header>
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a passionate [Your Profession] with a strong background in [Your Expertise]. I thrive on creativity, innovation, and problem-solving. With [X] years of experience in the industry, I've had the opportunity to work on diverse projects and collaborate with talented teams. My goal is to continue growing professionally while delivering exceptional results.</p>
-    </section>
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Technical Skills:</strong> [List of technical skills relevant to your profession]</li>
-            <li><strong>Soft Skills:</strong> [List of soft skills like communication, teamwork, problem-solving, etc.]</li>
-            <li><strong>Tools & Technologies:</strong> [List of tools and technologies you're proficient in]</li>
-        </ul>
-    </section>
-    <section class="portfolio">
-        <h2>Portfolio Highlights</h2>
-        <div class="project">
-            <h3>Project 1: [Project Name]</h3>
-            <p><strong>Description:</strong> [Brief overview of the project]</p>
-            <p><strong>My Role:</strong> [Your role in the project]</p>
-            <p><strong>Technologies Used:</strong> [Technologies and tools used in the project]</p>
-            <p><strong>Link:</strong> <a href="#">[Link to view the project/demo if available]</a></p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact">
-            <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me via:</p>
-            <p><strong>Email:</strong> [Your Email Address]</p>
-            <p><strong>LinkedIn:</strong> <a href="#">[Your LinkedIn Profile URL]</a></p>
-        </div>
-    </section>
-    <footer>
-        <!-- Add your footer content here -->
-    </footer>
+    <div class="container">
+        <header>
+            <img src="path/to/your/photo.jpg" alt="Your Name">
+            <h1>[Your Name]'s Portfolio</h1>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a passionate [Your Profession] with a strong background in [Your Expertise]. I thrive on creativity, innovation, and problem-solving. With [X] years of experience in the industry, I've had the opportunity to work on diverse projects and collaborate with talented teams. My goal is to continue growing professionally while delivering exceptional results.</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Technical Skills:</strong> [List of technical skills relevant to your profession]</li>
+                <li><strong>Soft Skills:</strong> [List of soft skills like communication, teamwork, problem-solving, etc.]</li>
+                <li><strong>Tools & Technologies:</strong> [List of tools and technologies you're proficient in]</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Portfolio Highlights</h2>
+            <div class="project">
+                <h3>Project 1: [Project Name]</h3>
+                <p><strong>Description:</strong> [Brief overview of the project]</p>
+                <p><strong>My Role:</strong> [Your role in the project]</p>
+                <p><strong>Technologies Used:</strong> [Technologies and tools used in the project]</p>
+                <p><strong>Link:</strong> <a href="#">[Link to view the project/demo if available]</a></p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section>
+            <h2>Contact Me</h2>
+            <div class="contact">
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me via:</p>
+                <p><strong>Email:</strong> [Your Email Address]</p>
+                <p><strong>LinkedIn:</strong> <a href="#">[Your LinkedIn Profile URL]</a></p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
