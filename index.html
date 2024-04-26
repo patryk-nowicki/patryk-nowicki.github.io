@@ -6,9 +6,10 @@
     <title>[Your Name]'s Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f2f2f2;
         }
         header {
             background-color: #333;
@@ -16,11 +17,32 @@
             padding: 20px;
             text-align: center;
         }
-        h1, h2 {
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
             margin: 0;
         }
         section {
             padding: 20px;
+        }
+        .about-me {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .skills, .portfolio, .contact {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
         }
         .project {
             margin-bottom: 20px;
@@ -28,21 +50,24 @@
         .project h3 {
             margin-top: 0;
         }
-        .contact {
-            text-align: center;
-            margin-top: 20px;
+        .contact p {
+            margin: 5px 0;
+        }
+        .contact p:last-child {
+            margin-bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="path/to/your/photo.jpg" alt="Your Name">
         <h1>[Your Name]'s Portfolio</h1>
     </header>
-    <section id="about">
+    <section class="about-me">
         <h2>About Me</h2>
         <p>Hello! I'm [Your Name], a passionate [Your Profession] with a strong background in [Your Expertise]. I thrive on creativity, innovation, and problem-solving. With [X] years of experience in the industry, I've had the opportunity to work on diverse projects and collaborate with talented teams. My goal is to continue growing professionally while delivering exceptional results.</p>
     </section>
-    <section id="skills">
+    <section class="skills">
         <h2>Skills</h2>
         <ul>
             <li><strong>Technical Skills:</strong> [List of technical skills relevant to your profession]</li>
@@ -50,7 +75,7 @@
             <li><strong>Tools & Technologies:</strong> [List of tools and technologies you're proficient in]</li>
         </ul>
     </section>
-    <section id="portfolio">
+    <section class="portfolio">
         <h2>Portfolio Highlights</h2>
         <div class="project">
             <h3>Project 1: [Project Name]</h3>
@@ -61,7 +86,7 @@
         </div>
         <!-- Add more projects as needed -->
     </section>
-    <section id="contact">
+    <section class="contact">
         <h2>Contact Me</h2>
         <div class="contact">
             <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me via:</p>
