@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site - VS Code Themed Python and Bash Code Examples</title>
+    <style>
+        /* Page background and font */
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #569cd6;
+        }
+
+        /* Style for collapsible sections */
+        .collapsible {
+            background-color: #333;
+            color: #dcdcaa;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: 18px;
+            margin-top: 10px;
+            border-left: 5px solid #569cd6;
+            transition: background-color 0.3s;
+        }
+
+        .collapsible:hover {
+            background-color: #444;
+        }
+
+        .content {
+            padding: 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #2d2d2d;
+            border-left: 5px solid #569cd6;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        /* Code block styling */
+        pre, code {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            display: block;
+            white-space: pre-wrap;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 0;
+        }
+
+        /* Syntax highlighting for Python */
+        .keyword { color: #569cd6; } /* Keywords */
+        .string { color: #ce9178; }  /* Strings */
+        .function { color: #dcdcaa; } /* Function names */
+        .comment { color: #6a9955; font-style: italic; } /* Comments */
+
+        /* Syntax highlighting for Bash */
+        .bash-command { color: #4ec9b0; } /* Commands */
+        .bash-variable { color: #dcdcaa; } /* Variables */
+        .bash-string { color: #ce9178; } /* Strings */
+        .bash-comment { color: #6a9955; font-style: italic; } /* Comments */
+    </style>
+</head>
+<body>
+
+<h1>Code Examples: Python and Bash</h1>
+
+<!-- Collapsible Python Example 1 -->
+<button class="collapsible">Python Code Example 1</button>
+<div class="content">
+    <pre><code><span class="comment"># Example 1: Basic Hello World program</span>
+<span class="function">print</span>(<span class="string">"Hello, world!"</span>)</code></pre>
+</div>
+
+<!-- Collapsible Python Example 2 -->
+<button class="collapsible">Python Code Example 2</button>
+<div class="content">
+    <pre><code><span class="comment"># Example 2: Simple addition function</span>
+<span class="keyword">def</span> <span class="function">add</span>(a, b):
+    <span class="keyword">return</span> a + b
+
+<span class="function">print</span>(<span class="function">add</span>(2, 3))</code></pre>
+</div>
+
+<!-- Collapsible Bash Example -->
+<button class="collapsible">Bash Code Example</button>
+<div class="content">
+    <pre><code><span class="bash-comment"># Example: Simple Bash script</span>
+<span class="bash-command">echo</span> <span class="bash-string">"Hello, world!"</span>
+
+<span class="bash-comment"># Define a variable</span>
+<span class="bash-variable">MY_VAR</span>=<span class="bash-string">"Bash Scripting"</span>
+
+<span class="bash-comment"># Print the variable</span>
+<span class="bash-command">echo</span> <span class="bash-string">"Variable is:</span> <span class="bash-variable">$MY_VAR</span><span class="bash-string">"</span>
+
+<span class="bash-comment"># Use an if-statement</span>
+<span class="bash-command">if</span> [ <span class="bash-variable">$MY_VAR</span> = <span class="bash-string">"Bash Scripting"</span> ]; <span class="bash-command">then</span>
+    <span class="bash-command">echo</span> <span class="bash-string">"Condition met!"</span>
+<span class="bash-command">fi</span></code></pre>
+</div>
+
+<script>
+// JavaScript for handling collapsible sections
+document.addEventListener("DOMContentLoaded", function () {
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
